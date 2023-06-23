@@ -4,6 +4,7 @@
   "description": "Basic example of how to use IOC in node.js",
   "main": "index.js",
   "scripts": {
+    "start": "nodemon app.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +16,19 @@
   "bugs": {
     "url": "https://github.com/furkankocyigit/inversify-basic/issues"
   },
-  "homepage": "https://github.com/furkankocyigit/inversify-basic#readme"
+  "homepage": "https://github.com/furkankocyigit/inversify-basic#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.60.0",
+    "eslint": "^8.43.0",
+    "eslint-config-standard-with-typescript": "^35.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-n": "^15.7.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "nodemon": "^2.0.22",
+    "typescript": "^5.1.3"
+  },
+  "dependencies": {
+    "inversify": "^6.0.1",
+    "reflect-metadata": "^0.1.13"
+  }
 }
