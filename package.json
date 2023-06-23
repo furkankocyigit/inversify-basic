@@ -1,0 +1,19 @@
+{
+  "name": "inversify-basic",
+  "version": "1.0.0",
+  "description": "Basic example of how to use IOC in node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/furkankocyigit/inversify-basic.git"
+  },
+  "author": "furkan.kocyigit",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/furkankocyigit/inversify-basic/issues"
+  },
+  "homepage": "https://github.com/furkankocyigit/inversify-basic#readme"
+}
