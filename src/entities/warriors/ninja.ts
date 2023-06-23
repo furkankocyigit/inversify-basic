@@ -1,8 +1,8 @@
-import {inject} from "inversify"
+import {inject, injectable} from "inversify"
 import SERVICE_IDENTIFIER from "../../constants/identifiers";
 import { Warrior,Weapon } from "../../interfaces";
 
-
+@injectable()
 export class Ninja implements Warrior{
     public name: string;
     public weapon: Weapon;
@@ -12,7 +12,7 @@ export class Ninja implements Warrior{
         this.weapon = _weapon;
     }
     
-    attack(): void {
-        this.weapon.harm();
+    public attack(): string  {
+        return this.weapon.harm();
     }
 }

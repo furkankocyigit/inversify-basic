@@ -4,8 +4,11 @@
         "lib": ["es6","dom"],
         "types": ["reflect-metadata"],
         "module": "commonjs",
+        "esModuleInterop": true,
         "moduleResolution": "node",
         "experimentalDecorators": true,
-        "emitDecoratorMetadata": true
+        "emitDecoratorMetadata": true,
+        "sourceMap": true,
+        "outDir": "./dist",
     }
 }

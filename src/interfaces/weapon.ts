@@ -1,6 +1,9 @@
+import { injectable } from "inversify";
+
+@injectable()
 export abstract class Weapon {
     weaponName: string;
-    harm(): void{
-        console.log(`Harm is done by ${this.weaponName}`)
+    harm(): string {
+        return `Harm is done by ${this.weaponName}`
     }
 }
