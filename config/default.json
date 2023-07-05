@@ -1,0 +1,13 @@
+{   
+    "Warriors" :
+    {
+        "firstSide":"Ninja",
+        "secondSide":"Samurai"
+    },
+    
+    "Weapons" :
+    {
+        "firstWeapon": "Katana",
+        "secondWeapon": "Shuriken"
+    }
+}

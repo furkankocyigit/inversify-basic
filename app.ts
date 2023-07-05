@@ -1,8 +1,8 @@
-import container from "./src/configs/inversify.config";
+import container from "./config/inversify.config";
 import SERVICE_IDENTIFIER from "./src/constants/identifiers";
-import { Battle } from "./src/interfaces";
+import { IBattle } from "./src/interfaces";
 
-let epicBattle = container.get<Battle>(SERVICE_IDENTIFIER.BATTLE);
+let epicBattle = container.get<IBattle>(SERVICE_IDENTIFIER.BATTLE);
 
 console.log('\t\t******* Welcome to Battle! *******\n');
 
