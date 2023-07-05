@@ -1,14 +1,14 @@
 
-import {inject, injectable} from "inversify"
+import {inject, injectable, multiInject} from "inversify"
 import SERVICE_IDENTIFIER from "../../constants/identifiers";
-import { Weapon,Warrior } from "../../interfaces/";
+import { IWeapon,IWarrior } from "../../interfaces/";
 
 @injectable()
-export class Samurai implements Warrior{
+export class Samurai implements IWarrior{
     public name: string;
-    public weapon: Weapon;
+    public weapon: IWeapon;
     
-    public constructor(@inject(SERVICE_IDENTIFIER.WEAPON) _weapon:Weapon ){
+    public constructor(@inject(SERVICE_IDENTIFIER.WEAPON) _weapon:IWeapon){
         this.name = "Samurai";
         this.weapon = _weapon;
     }

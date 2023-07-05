@@ -1,8 +1,8 @@
 import { injectable } from "inversify";
-import { Weapon } from "../../interfaces/weapon";
+import { IWeapon } from "../../interfaces/weapon";
 
 @injectable()
-export class Katana extends Weapon {
+export class Katana extends IWeapon {
     public constructor() {
         super()
         this.weaponName = 'Katana';

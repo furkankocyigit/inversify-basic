@@ -1,7 +1,7 @@
-import { Weapon } from './weapon';
+import { IWeapon } from './weapon';
 
-export interface Warrior {
+export interface IWarrior {
     name: string;
-    weapon: Weapon;
+    weapon: IWeapon;
     attack(): string;
 }

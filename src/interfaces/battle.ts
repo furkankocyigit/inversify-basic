@@ -1,4 +1,4 @@
-export interface Battle{
+export interface IBattle{
     startBattle():string;
     showEnemies():string;
 }

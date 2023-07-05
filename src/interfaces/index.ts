@@ -1,3 +1,3 @@
-export {Warrior} from "./warrior"
-export {Weapon} from "./weapon"
-export {Battle} from "./battle"
+export {IWarrior} from "./warrior"
+export {IWeapon} from "./weapon"
+export {IBattle} from "./battle"

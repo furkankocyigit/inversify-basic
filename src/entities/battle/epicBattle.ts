@@ -1,13 +1,17 @@
-import SERVICE_IDENTIFIER from "../../constants/identifiers";
-import { Battle, Warrior } from "../../interfaces";
+import { IBattle, IWarrior } from "../../interfaces";
 import {inject, injectable} from "inversify";
+import { BattleSides } from "./sides";
 
 @injectable()
-export class EpicBattle implements Battle{
+export class EpicBattle implements IBattle{
     
-    @inject(SERVICE_IDENTIFIER.WARRIOR) public warrior1:Warrior;
-    @inject(SERVICE_IDENTIFIER.WARRIOR) public warrior2:Warrior;
+    public warrior1:IWarrior;
+    public warrior2:IWarrior;
     
+    constructor(@inject("Factory<Warrior>") warriorFactory: (warriorType:string, weaponType:string) => IWarrior){
+        this.warrior1 = warriorFactory(BattleSides.warrior1.name, BattleSides.warrior1.weapon);
+        this.warrior2 = warriorFactory(BattleSides.warrior2.name, BattleSides.warrior2.weapon);
+    }
     startBattle(): string {
         let battleAction = `FIGHT!
                     ${this.warrior1.name} attacks: ${this.warrior1.attack()}
